@@ -1,0 +1,14 @@
+1. Sebutkan dan jelaskan berbagai macam sintaks percabangan yang digunakan di Java!
+
+if-else: digunakan jika menginginkan suatu pernyataan itu dilakukan dengan syarat tertentu yang bernilai benar.
+
+switch: switch dipakai pada saat kita ingin memberikan kondisi dengan beberapa syarat yang memiliki tipe data identik.
+
+
+2. Sebutkan dan jelaskan berbagai macam sintaks perulangan yang digunakan di Java!
+
+for: loop yang digunakan jika jumlah perulangan telah diketahui
+
+while: loop yang digunakan jika jumlah perulangan tidak diketahui. Sebelum memasuki loop, kondisi di cek terlebih dahulu
+
+do-while: loop yang digunakan jika jumlah perulangan tidak diketahui. Loop dijalankan terlebih dahulu, setelah itu kondisi di cek

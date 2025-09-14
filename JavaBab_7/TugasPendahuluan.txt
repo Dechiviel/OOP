@@ -1,0 +1,5 @@
+Package adalah suatu cara untuk memanage class-class yang kita buat.
+
+memanggil class lain yang telah ada pada package
+
+this dapat menunjukkan suatu member dalam class-ya sendiri. 

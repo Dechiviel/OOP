@@ -1,0 +1,40 @@
+1. Apakah yang dimaksud dengan kelas, method, atribut dan obyek?
+
+Class = adalah prototype atau desain awal dari sebuah objek sebelum dideklarasikan
+Method = Fungsi bawaan dari sebuah objek yang didefinisikan di class
+Atribut = variable atau nilai dari sebuah objek yang didefinisikan di class
+Objek = entitas yang memiliki nilai(atribut) dan fungsi(method)
+
+2. Buatlah contoh class dan definisikan atribut dan methodnya!
+
+public class Buku
+{
+	public String judulBuku;
+	public String pengarang;
+	public int tahunTerbit;
+
+	public void GetInformasi()
+	{
+		System.out.println("Judul buku = " + judulBuku);
+		System.out.println("Pengarang buku = " + pengarang);
+		System.out.println("Tahun terbit = " + tahunTerbit);
+	}
+}
+
+3. Buatlah kode program soal no. 2 diatas!
+
+4. Buatlah kelas yang berisi main method yang membuat obyek dari kelas yang telah dibuat di soal no. 3. Selanjutnya obyek tersebut mengakses atribut dan methodnya.
+
+public class TugasPendahuluan
+{
+	public static void main (String args[])
+	{
+		Buku novelA = new Buku();
+		
+		novelA.judulBuku = "Raja Iblis vol. 2";
+		novelA.pengarang = "Gege Akutami";
+		novelA.tahunTerbit = 2025;
+
+		novelA.GetInformasi();
+	}
+}

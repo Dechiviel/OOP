@@ -1,0 +1,45 @@
+Horse
+--------------------------------------------
++ name: String
++ totalScore: int
++ speed: int
++ power: int
++ stamina: int
++ guts: int
++ favoriteWord: String
+-------------------------------------------
++ Horse(name: String, speed: int, power: int, 
+	stamina: int, guts: int, favoriteWord: 
+	String)
++ motivated(word: String)
++ run(): int
+-------------------------------------------
+
+
+
+
+Trainer
+--------------------------------------------
++ name: String
++ horse: Horse
+- intimatePercentage: int
+-------------------------------------------
++ Trainer(name: String, horse: Horse, 
+	intimatePercentage: int)
++ motivating(word: String)
++ printInfo()
+-------------------------------------------
+
+
+
+
+
+Field
+--------------------------------------------
++ lap: int
++ numberOfSpectators: int
+-------------------------------------------
++ Field(lap: int, numberOfSpectators: int)
++ increaseSpectators(num: int)
++ printSpectators()
+-------------------------------------------

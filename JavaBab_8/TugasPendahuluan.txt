@@ -1,0 +1,9 @@
+Encapsulation (Enkapsulasi) adalah suatu cara untuk menyembunyikan implementasi detail dari suatu class. Enkapsulasi mempunyai dua hal mendasar, yaitu :
+1. information hiding
+2. menyediakan suatu perantara (method) untuk pengaksesan data
+
+Contructor (konstruktor) adalah suatu method yang pertama kali dijalankan pada saat pembuatan suatu obyek. Konstruktor mempunyai ciri yaitu :
+1. mempunyai nama yang sama dengan nama class
+2. tidak mempunyai return type (seperti void, int, double dll)
+
+Overloading constructor adalah kondisi dimana suatu class mempunyai lebih dari 1 konstruktor dengan syarat daftar parameternya tidak boleh ada yang sama.

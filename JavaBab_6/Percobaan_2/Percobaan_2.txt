@@ -1,0 +1,7 @@
+Location
+----------------
++ longitude: double
++ latitude: double
+----------------
++ Location(longitude: double, latitude: double)
++ distanceTo(destionation: Location) : double

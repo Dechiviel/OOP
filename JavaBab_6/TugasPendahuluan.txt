@@ -1,0 +1,21 @@
+1. Sebutkan bagian-bagian dari class diagram!
+Nama Kelas 
+berisi nama dari kelas.
+
+Atribut 
+berisi data atau properti yang dimiliki kelas.
+
+Operasi/Metode 
+Bagian bawah, berisi fungsi atau perilaku yang dapat dilakukan oleh kelas.
+
+Modifier
+Cakupan lingkup access dari class, atribut, atau metode;
+
+2. Sebutkan relasi yang digunakan dalam class diagram!
+
+Dependency (panah putus-putus)
+Association (panah biasa)
+Aggregation (panah berpangkal belah ketupat putih)
+Composition (panah berpangkal belah ketupat hitam)
+Inheritance/Generalization (panah berujung segitiga)
+Realization/Implementation (panah berujung segitiga dan berbadan putus-putus)

@@ -1,0 +1,50 @@
+1. Apakah yang dimaksud dengan array?
+
+Array adalah kumpulan data bertipe sama yang memiliki nama yang sama dan dibedakan melalui index
+
+2. Buatlah contoh mendeklarasikan, memberi nilai dan mengakses elemen array!
+
+deklarasi:
+int array[];
+
+memberi nilai:
+int array[] = {10, 20, 30};
+atau
+array[index] = 20; (bila array sudah dideklarasikan)
+
+
+mengakses elemen array:
+int varA = array[index];
+
+
+3. Bagaimana cara mengetahui panjang array?
+
+array 1 dimensi: array.length
+array 2 dimensi: array[i].length
+array 3 dimensi: array[i][j].length
+dst
+
+4. Uraikan pengetahuan anda mengenai array multidimensi!
+
+array multidimensi adalah array yang memiliki lebih dari 2 dimensi, dimana sebuah array dapat berisi array lagi. dalam dari array yang berisi array ditentukan oleh banyaknya dimensi
+
+5. Bagaimana cara mengkopi isi array?
+
+Isi dari suatu array dapat dikopi pada array yang lain dengan memanfaatkan method arraycopy() pada class System. Format penulisannya sebagai berikut :
+
+System.arraycopy(array1, p1, array2, p2, n);
+dimana : 
+	array1 = array asal/sumber pengkopian
+	array2 = array tujuan pengkopian
+	p1 = posisi indeks awal pengkopian pada array asal
+	p2 = posisi indeks awal pengkopian pada array tujuan
+	n = banyaknya elemen array yang akan dikopi
+
+6. Apakah yang dimaksud dengan referensi array. Beri contoh!
+
+referensi array adalah dimana alamat dari sebuah array dapat ditunjuk oleh array lainnya
+
+contoh:
+int arrayA[] = {10, 20, 30};
+int arrayB[];
+arrayB = arrayA (elemen arrayA dapat di akses dan dimodifikasi melalui arrayB)
