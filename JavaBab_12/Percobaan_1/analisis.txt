@@ -1,0 +1,30 @@
+Percobaan 1 Melakukan overloading pada method
+
+class Segiempat yang merepresentasikan sebuah bangun segiempat dengan dua titik koordinat (x1, y1 untuk pojok kiri atas dan x2, y2 untuk pojok kanan bawah). Class ini menerapkan konsep method overloading dengan menyediakan tiga versi method buatSegiempat, yaitu dengan parameter koordinat langsung (int x1, int y1, int x2, int y2), dengan dua objek Point sebagai titik batas, serta dengan sebuah Point ditambah lebar (w) dan tinggi (h). Hal ini menunjukkan fleksibilitas dalam pembuatan objek segiempat sesuai kebutuhan input. Method cetakSegiempat digunakan untuk menampilkan koordinat segiempat yang terbentuk. Pada main, ditunjukkan cara penggunaan ketiga versi method tersebut: pertama menggunakan koordinat angka, kedua menggunakan dua titik Point, dan ketiga menggunakan satu titik awal dengan ukuran lebar dan tinggi. Secara keseluruhan, program ini memperlihatkan implementasi overloading sekaligus penggunaan class library Java (java.awt.Point) untuk mempermudah representasi titik koordinat.
+
+Latihan 1. Overriding
+
+Dalam versi ini, method amethod pada class Base memiliki modifier protected, sehingga dapat diakses oleh subclass Over. Di class Over, method dengan nama dan parameter yang sama didefinisikan ulang, ditandai dengan anotasi @Override. Saat objek Over memanggil o.amethod(iBase), method yang dijalankan adalah versi milik subclass, sehingga output-nya "Over.amethod". Dengan cara ini, benar-benar terjadi overriding, yaitu subclass mengganti perilaku method yang diwariskan dari superclass.
+
+Latihan 2 Overloading
+
+Pada class MyParent, terdapat dua versi method addMe: satu menerima dua parameter bertipe int, dan satu lagi menerima objek MyParent sebagai parameter, yang kemudian memanggil versi pertama. Hal ini sudah menjadi contoh overloading karena dua method memiliki nama yang sama tetapi parameter berbeda. Pada class MyChild, konsep overloading lebih diperluas dengan menambahkan beberapa versi addMe: satu dengan tiga parameter int, satu lagi dengan objek MyChild sebagai parameter, serta satu lagi dengan dua parameter int. Versi dengan dua parameter int di MyChild sebenarnya menimpa (override) method dengan signature sama di MyParent, sementara yang lain benar-benar merupakan overloading. Pada bagian main, terlihat bahwa myChi.addMe(10, 20, 30) memanggil versi tiga parameter, myChi.addMe(myChi) memanggil versi objek MyChild, sedangkan myPar.addMe(myPar) memanggil versi objek MyParent.
+
+Latohan 3 Overloading
+
+terdapat dua method dengan nama sama (myMethod) tetapi parameter berbeda: satu menerima int dan satu lagi menerima String. Pada method main, variabel ch bertipe char dipanggil dengan obj.myMethod(ch). Karena tidak ada method yang secara eksplisit menerima char, compiler Java akan melakukan type promotion secara otomatis, yaitu mengubah char menjadi int. Akibatnya, method yang dipanggil adalah myMethod(int i), dan output yang muncul adalah "int version".
+
+Latihan 4 Mengimplementasikan UML class diagram dalam program
+
+Class Orang menyimpan atribut dasar nama dan umur, lalu diwariskan ke class Dosen yang menambahkan atribut khusus nip. Pada class Dosen, terdapat tiga constructor dengan parameter berbeda (hanya nama, nama dan nip, atau nama, nip, dan umur), sehingga pengguna bisa membuat objek dosen dengan informasi yang berbeda tingkat kelengkapannya. Method Info() digunakan untuk mencetak data dosen,
+
+
+TUgas 1 Mengimplementasikan UML class diagram dalam program
+
+Terdapat tiga method average() dengan parameter berbeda: dua bilangan bulat (int), dua bilangan desimal (double), dan tiga bilangan bulat (int). Dengan overloading, pemanggilan method akan otomatis menyesuaikan dengan tipe dan jumlah argumen yang diberikan. Pada class TesTugas1, objek rn digunakan untuk menghitung rata-rata dari berbagai kombinasi nilai, yaitu dua int, dua double, dan tiga int. Hasil yang dicetak menunjukkan bahwa method dengan parameter sesuai akan dipanggil tanpa perlu nama method yang berbeda
+
+Tugas 2 Mengimplementasikan UML class diagram dalam program
+
+lass Katak memiliki atribut umur dan nama serta method caraBergerak() yang mengembalikan string "melompat". Class Kecebong diturunkan dari Katak dengan tambahan atribut panjangEkor, dan method caraBergerak() dioverride untuk mengembalikan "berenang". Pada class TesTugas2, dibuat objek Katak dan Kecebong, lalu ditampilkan dalam bentuk table
+
+Dari output, terlihat bahwa meskipun Kecebong adalah subclass dari Katak, ia memiliki perilaku berbeda pada method caraBergerak, yang merupakan contoh nyata polimorfisme. 

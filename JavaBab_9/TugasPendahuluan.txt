@@ -1,0 +1,21 @@
+1. Apa yang dimaksud dengan inheritance?
+
+Inheritance adalah pewarisan suatu class. Class yang memiliki turunan disebut parent atau base class, sedangkan class turunan itu sendiri disebut sebagai subclass atau child class. Suatu subclass dapat mewarisi apa-apa yang dipunyai oleh parent class-nya, sehingga member dari suatu subclass adalah terdiri dari apa-apa yang ia punyai dan juga apa-apa yang ia warisi dari class parent-nya.
+
+2. Buatlah contoh kasus yang menerapkan konsep inheritance!
+
+Contohnya adalah class Tugas yang memiliki atribut tanggalDeadline. Lalu ada class TugasCoding yang merupakan turunan dari class Tugas, dimana class TugasCoding memiliki atribut tambahan selain tanggalDeadline, seperti bahasa pemrograman dan framework yang digunakan.
+
+3. Adakah perbedaan cara mengakses member class milik parent dan member class
+milik sendiri? Jelaskan melalui contoh ! (Silahkan memanfaatkan jawaban soal
+nomor 2.)
+
+Perbedaan cara mengakses member milik parent dan member milik sendiri terletak pada scope pewarisan. Member yang dimiliki oleh parent class dapat langsung diakses oleh child class selama memiliki modifier public atau protected, sedangkan member milik child class hanya bisa diakses di dalam child class itu sendiri. Misalnya pada contoh sebelumnya, atribut tanggalDeadline dimiliki oleh parent class Tugas dapat digunakan di dalam class TugasCoding. Sedangkan atribut bahasaPemrograman dan framework hanya ada di TugasCoding, sehingga parent class tidak bisa mengaksesnya. 
+
+4. Apa yang dimaksud dengan konsep single inheritance?
+
+Single inheritance adalah pewarisan dimana sebuah class hanya mewarisi dari satu parent class saja. Dengan kata lain, sebuah child class hanya punya satu parent, sehingga struktur pewarisannya berbentuk seperti garis lurus.
+
+5. Apa yang dimaksud dengan konsep multi level inheritance ?
+
+Multilevel inheritance adalah pewarisan yang terjadi secara bertingkat, di mana sebuah kelas mewarisi dari kelas lain, lalu kelas tersebut juga menjadi parent bagi kelas berikutnya. Dengan kata lain, ada rantai pewarisan lebih dari satu level.

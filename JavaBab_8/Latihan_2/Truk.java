@@ -6,21 +6,22 @@ public class Truk
 	public Truk(double beratMaks)
 	{
 		this.muatan = 0;
-		this.muatanMaks = beratMaks;
+		this.muatanMaks = this.kiloToNewts(beratMaks);
 	}
 
 	public double getMuatan()
 	{
-		return this.muatan;
+		return this.newtsToKilo(this.muatan);
 	}
 
 	public double getMuatanMaks()
 	{
-		return this.muatanMaks;
+		return this.newtsToKilo(this.muatanMaks);
 	}
 
 	public boolean tambahMuatan(double berat)
 	{
+		berat = kiloToNewts(berat);
 		if(this.muatanMaks >= this.muatan + berat)
 		{
 			this.muatan += berat;
@@ -34,10 +35,10 @@ public class Truk
 	
 	public double newtsToKilo(double berat)
 	{
-		return (berat * 9.8);
+		return (berat / 9.8);
 	}
 	public double kiloToNewts(double berat)
 	{
-		return (berat / 9.8);
+		return (berat * 9.8);
 	}
 }
